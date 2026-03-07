@@ -1,0 +1,34 @@
+weight = int(input("Enter your weight: "))
+unit = input( "(K)g or (L)bs: ")
+if unit.upper() == "K":
+    converted = weight / 0.45
+    print("weight in Lbs: " + str(converted))
+else:
+    converted = weight * 0.45
+    print("weight in Lbs : " +str(converted))
+
+
+while loop
+i=1
+while i<=10:
+    print(i*'a')
+    i=i+1
+
+
+lists
+names = ["john","bob","mosh","sam","mary"]
+names[0] = "jon"
+print(names[0:3])
+print(names)
+
+
+
+for and while loop comparison
+numbers = [1, 2, 3, 4, 5]
+for item in numbers:
+    print(item)
+
+i=0
+while i < len(numbers):
+    print(numbers[i])
+    i=i+1
