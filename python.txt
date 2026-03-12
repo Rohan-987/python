@@ -1,0 +1,398 @@
+#print("hello world")
+#print("hello",1,2.5,True,sep="/")
+
+#print("hello",end="\n")     - end is used to enter text in next line
+#print("world")
+
+
+# DATA TYPES
+
+# integer     - python by default handles integer data types.
+#print(8)
+
+# float       - decimals are called float
+
+#complex      - another ype which is used less
+# print (5+6j) - consists of a real part and imaginary part
+
+# INPUT function
+
+#a = int(input("enter first number: "))
+#b = int(input("enter second number: "))
+#print(a+b)      
+
+#print(str(7.9))                                                                                              
+
+# Variable binding
+
+#a,b,c = 2,3,4      - multiple variables are binded here
+#print(b)
+
+# TYPE conversion   
+
+#2 types       
+#  1.implicit - done on its own
+#  2.explicit - done by user
+
+#print(5+4.5) - example of implicit 
+
+# Keywords are those words reserved by the compiler which cannot be used as 
+# variables etc. examples: false, class ,return etc
+
+# Identifiers - variable names ,function names , class names
+
+# Indentation - space before the code. ex: loops
+
+# Statement - any line which is executable by your code 
+# a=b+c , print("hello world") etc
+
+# Expressions - example 2+4 , operand operator etc
+
+# Literals - values given to variable. ex a = 2. 2 is literal here
+# a = 0b0011, a = 0x123, a = 1.5e4, city = "kolkata" , x = none
+
+# We can use single and double quotes bcoz some words contain apostrophe.
+
+# Conditionals - if else statements
+
+#email = input(" enter your email: ")
+#password = input(" enter your password")
+
+#if email == "abc@gmail.com" and password == "1234":
+#    print("welcome")
+#else :
+#    print("incorrect email or password") 
+
+# elif statements  - example
+
+#age = float(input("how old are you? "))
+
+#if age == 100: 
+#    print("you are a century old")
+#elif age >= 18:
+#    print("you are an adult")
+#elif age <= 2:
+#    print("you are an infant")
+#else:
+#    print("you are a child") 
+
+
+# Loops
+
+# WHILE LOOP - a block of code which executes as long as it's  condition remains true\
+
+#name = input ("Enter your name: ")
+
+#while name == "":
+#    print("you did not enter your name")
+#    name = input("Enter your name: ")
+
+#print(f"hello {name}" )
+
+#number = int(input("enter a number"))
+#number = int(number)
+
+#i= 1
+
+#while i!=11:
+#    print(number*i)
+#    i=i+1
+
+# FOR LOOPS - a block of code executed limited amount of times
+# WHILE LOOP = unlimited
+# FOR LOOP= limited
+
+#for i in range(10):
+#    print(i+1)
+
+#for i in range (50,100+1,2):
+#    print(i)
+
+#for i in "rohan":
+#    print(i)
+
+#import time
+
+#for seconds in range(10,0,-1):
+#    print(seconds)
+#    time.sleep(1)
+#print("happy new year")
+
+
+# BREAK    = used to terminate the loop entirely
+
+#while True:
+#    name = input("enter your name: ")
+#    if name != "" :
+#        break
+
+# CONTINUE = skips to the next iteration of the loop
+
+#phone_number = "123-456-789"
+
+#for i in phone_number:
+#    if i == "-":
+#        continue
+#    print(i, end = "")
+
+# PASS     = does nothing,acts as a placeholder, can be used to skip something
+
+#for i in range(1,21):
+#    if i == 13:
+#        pass
+#    elif i == 8:
+#        pass
+#    else:
+#        print(i, end = ",")
+
+
+# Strings - can use single,double or triple inverted commas. triple is used for paragraph
+# or multi lined strings
+
+#city = str("kolkata")
+
+#poem = """ jrngjhgrwongwn
+# dkjbvbdvijwbvjb
+# dvbjkwbvjw """
+
+#print(poem)
+
+#slicing can be used to create a substring by extracting elements from another string
+#        indexing[] or slice()
+#        [start:stop:step]
+#indexing is to get a single element. slicing is to get a range(subsequence)
+
+#name = "Rohan bhai"
+
+#first_name = name[0:5]   #first index is inclusive,2nd one is exclusive
+#last_name = name[6:10]
+#some_name =name[0:10:2]   #step the last digit denotes the gap required between letters to be printed
+#reversed_name = name[::-1]  #-1 here shows we are counting backwards
+
+#print(reversed_name)
+
+#slice()     this function can  be used to create a slice object which is reusable.
+#            within this function we can add 3 values start,stop,step. urls can be long so we use negative index at stop
+
+#website1 = "http://google.com"
+#website2 = "http://wikipedia.com"
+
+#slice = slice(7,-4)
+
+#print(website1[slice])
+#print(website2[slice])
+
+
+# LISTS - used to store multiple items in a single variable. it can be updated later as well
+
+#food = ["pizza","burger","apple","banana","mango"]
+
+#print(food[2])
+#food[1] = ("rice")
+#print(food)
+
+# a few functions with lists
+
+#food.append("ice cream")     - adds an item
+#food.remove("mango")
+#food.pop()                   - removes last element
+#food.insert(2,"milk")        - insert object and the given index
+#food.sort()                  - sorts
+#food.clear()                 - removes all elements
+
+#for x in food:
+#    print(x)
+
+# 2D LISTS   - a list of lists
+
+#drinks = ("coffee","milk","soda")
+#dinner = ("pizza","burger","rice")
+#dessert = ("ice cream","cake")
+
+#food = [drinks,dinner,dessert]
+
+#print(food[2][0])
+
+# TUPLE = collection which is ordered and unchangeable. used to group related data
+
+#student = ("rohan",22,"male")
+#print(student.count("male"))       - number of times it appears
+#print(student.index("male"))       - it shows the index
+
+#for x in student:
+#    print(x)
+
+#if "rohan" in student:
+#    print("rohan is here! ")
+
+
+# Variable and memory refernces
+
+#a = 4
+#print(id(a))
+#print(hex(id(a)))
+
+# Aliasing
+
+#b = a
+#print(b)
+#print(id(b))
+
+# Mutability - ability to change the data or edit data in it's memory location
+
+# immutable - string,int,float,bool,complex,tuple
+# mutable   - list,dictionary,sets
+
+# Recursion - a recursive function solves a complex problem by breaking it down into smaller and smaller versions of the same problem.      
+
+#def multiply(a,b):                  ***********
+#    result=0
+
+#for i in range(0,b):
+#  result= result + a    
+
+#print(result)   
+#multiply(5,6) 
+
+#def fib(n):
+#    if n==0 or n==1:
+#        return 1
+#    else:
+#        return fib(n-1) + fib(n-2)
+#print(fib(12)) 
+
+
+# DICTIONARY - a changeable, unordered collection of unique key: value pairs
+#              Fast because they use hashing, allow us to access value quickly
+
+#capitals = {"usa":"washington dc",
+#            "india":"new delhi",
+#            "china":"beijing",
+#            "russia":"moscow"}
+
+#print(capitals["germany"])      - shows error as its not in the dictionary
+#print(capitals.get("russia"))   - get a value
+#print(capitals.keys())          - get a key
+#print(capitals.values())        - get a value
+#print(capitals.items())         - get both keys and values printed
+
+#for key,value in capitals.items():     - another way to pront key value pairs is for loop
+#    print(key,value)
+
+#capitals.update({"germany":"berlin"})   - dictionary is mutable so we can add new key value pairs
+#capitals.update({"usa":"new york"})     - update can also be used to change the existing key value pairs
+#capitals.pop("russia")                  - pop can be used to remove a key value pair
+#capitals.clear()                        - clear removes everything from the dictionary
+
+
+# Everything in python is an object
+
+# OOP - you can make your own data type.
+
+# object - its an instance of a class
+# class - its a blueprint
+
+# example - a = 5. here a is object and class is variable
+#           l1=[5]. here l1 is object and class is list
+
+#l1 = [2,3]
+#print(type(l1))
+
+#a = True
+#print(type(a))
+
+#class Car:
+#    def __init__(self, color, topspeed):    
+#        self.color = color 
+#        self.topspeed = topspeed
+
+#    def get_info(self):        
+#        print("You have a",self.color,"car with a topspeed of",self.topspeed)
+
+#    def calAvgSpeed(self,km,t):
+#        speed = km/t
+#        print("your speed is",speed)
+
+#audi = Car("blue",300)
+#audi.get_info()
+#audi.calAvgSpeed(200,2)
+
+#nano = Car("white", 120)
+#nano.get_info()
+#nano.calAvgSpeed(80,2)
+
+# whatever functions we make in class are called methods
+
+# Magic Methods -They are called "magic" because you don't call them directly.Instead, they are triggered automatically
+# by Python when you perform certain actions, like adding two numbers or printing an object.
+
+# 1. __init__ (Constructor):
+#    Triggered when you create a new object.
+#    Example: my_car = Car()
+
+# 2. __str__ (String Representation):
+#    Triggered when you print an object or use str(). Instead of seeing a weird memory address like <__main__.Car object at 0x123>, you can return a nice sentence.
+#    Example: print(my_car)
+
+# Benefits of oop:
+# 1. ease of coding
+# 2. modularity - can be divided into different modules
+# 3. reusability - can make variables from same class
+# 4. readability
+# 5. efficiency
+ 
+# Encapsulation, Abstraction, Inheritance , Polymorphism
+
+# Instance Variable - unique to every object. for ex: every car has different color
+#                     but same number of wheels
+# Class variable - shared by all objects. 
+ 
+# Encapsulation is the practice of bundling data (variables) and the methods 
+# that work on that data into a single unit (a class). It also involves hiding 
+# the internal details so they can't be changed accidentally from the outside.
+# Example: A BankAccount class has a balance. You shouldn't be able to change 
+# the balance directly (e.g., account.balance = 1000000). Instead, you use methods 
+# like deposit() or withdraw() to change it safely.
+
+# Abstraction means hiding the complex background logic and only showing the 
+# essential features to the user. You care about what an object does, not how 
+# it does it.
+# Example: When you use a TV remote, you press the "Volume Up" button. 
+# You don't need to know how the circuit board processes the signal; you
+# just need the button (the interface).
+
+# Inheritance allows a new class (the Child) to adopt the attributes and methods
+# of an existing class (the Parent). It helps you avoid writing the same code twice.
+# Example: A Car class and a Truck class can both inherit from a general Vehicle 
+# class because they both have wheels and engines.
+
+# Polymorphism allows different classes to be treated as if they are the same "type,"
+# usually because they share the same method names but perform them differently.
+
+# Example: Both a Dog and a Cat have a speak() method. But the Dog says "Woof" and 
+# the Cat says "Meow." You can call .speak() on any animal without needing to know 
+# exactly what it is first.
+
+# Big o notation 
+
+# time and space complexities - code needs to use less space and less time and be 
+# more efficient
+
+#import time
+#def fib(n):
+#    if n==0 or n==1:
+#        return 1
+#    else:
+#        return fib(n-1) + fib(n-2)
+    
+#start = time.time()
+#print(fib(2))
+#print("this code took time",time.time()-start,"sec")    
+
+#import time
+#start = time.time()
+
+#for i in range(1,1001):
+#    print (i)
+
+#print(f"your code took {time.time()-start()}")
